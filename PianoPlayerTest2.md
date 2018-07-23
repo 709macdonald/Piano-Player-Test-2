@@ -22,6 +22,10 @@ else {
   counter++;
 }
 
+if (counter == my_song.length){
+console.log ("Hold for " + my_song[counter - 1].lasts)
+}
+
   my_song.forEach(function(notes){
     if((notes.starts_at + notes.lasts) == counter){
       console.log("stop playing " + notes.note)
@@ -32,4 +36,5 @@ else {
   });
 
 }
+
   console.log("Song is finished. Release all notes." );
